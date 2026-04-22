@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react"
-import { useLogin } from "../api/auth-store/useAuth"
+import { useLogin } from "../api/useAuth"
 import { Zap } from "lucide-react"
 import { Link } from "react-router-dom"
 
@@ -73,7 +73,7 @@ export default function Login() {
           </form>
         </div>
  
-        <p className="text-center text-sm text-[#555] mt-6">
+        <p className="text-center text-sm text-[#555] mt-6 mb-6">
           Não tem conta?{' '}
           <Link to="/register" className="text-[#c8f135] hover:underline">
             Criar conta
