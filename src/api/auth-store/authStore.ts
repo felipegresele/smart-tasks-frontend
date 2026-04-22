@@ -1,6 +1,6 @@
 import { create } from "zustand";
-import type { AuthResponse } from "../schema";
 import { persist } from "zustand/middleware";
+import type { AuthResponse } from "../../schema";
 
 interface AuthState {
   user: { name: string; email: string; id: number } | null
