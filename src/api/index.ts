@@ -3,7 +3,7 @@ import { useAuthStore } from "./auth-store/authStore"
 
  
 export const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://smart-tasks-backend.onrender.com',
   headers: { 'Content-Type': 'application/json' },
 })
  

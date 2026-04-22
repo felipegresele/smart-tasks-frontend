@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { tasksApi } from "./tasks";
-import type { Priority, TaskStatus } from "../schema";
+import type { Priority, TaskStatus } from "../../schema";
 
 export const TASKS_KEY = ['tasks'] as const
 export const STATS_KEY = ['tasks', 'stats'] as const
