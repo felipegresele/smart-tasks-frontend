@@ -1,5 +1,5 @@
-import { api } from ".";
-import type { AiSuggestedTask, CreateTaskRequest, Priority, Task, TaskStats, TaskStatus } from "../schema";
+import { api } from "..";
+import type { AiSuggestedTask, CreateTaskRequest, Priority, Task, TaskStats, TaskStatus } from "../../schema";
 
 export const tasksApi = {
   getAll: async (filters?: { status?: TaskStatus; priority?: Priority }): Promise<Task[]> => {

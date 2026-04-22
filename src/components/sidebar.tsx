@@ -1,6 +1,6 @@
 import { LogOut, Zap, LayoutDashboard, CheckSquare } from 'lucide-react'
-import { useTaskStats } from '../api/useTasks'
-import { useAuthStore } from '../api/authStore'
+import { useTaskStats } from '../api/tasks/useTasks'
+import { useAuthStore } from '../api/auth-store/authStore'
 
 export default function Sidebar() {
   const user = useAuthStore((s) => s.user)

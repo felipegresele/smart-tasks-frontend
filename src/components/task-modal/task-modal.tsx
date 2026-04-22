@@ -1,7 +1,7 @@
 import { useEffect, useState, type FormEvent } from "react"
-import { useCreateTask, useUpdateTask } from "../../api/useTasks"
 import type { Priority, Task, TaskStatus } from "../../schema"
 import { X } from "lucide-react"
+import { useCreateTask, useUpdateTask } from "../../api/tasks/useTasks"
 
 interface Props {
   onClose: () => void

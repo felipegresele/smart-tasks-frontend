@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { Sparkles, Plus, X, Loader2 } from 'lucide-react'
 import type { AiSuggestedTask, Priority } from '../../schema'
-import { useCreateTask, useSuggestTasks } from '../../api/useTasks'
+import { useCreateTask, useSuggestTasks } from '../../api/tasks/useTasks'
 
 
 const PRIORITY_STYLES: Record<Priority, string> = {

@@ -1,5 +1,8 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
-import { useAuthStore } from "./api/authStore"
+import Login from "./components/login"
+import Register from "./components/register"
+import Dashboard from "./components/dashboard"
+import { useAuthStore } from "./api/auth-store/authStore"
 
 const Protected = ({ children }: { children: React.ReactNode }) => {
   const ok = useAuthStore((s) => s.isAuthenticated)

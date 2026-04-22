@@ -1,6 +1,6 @@
 import { Zap } from "lucide-react"
 import { Link } from "react-router-dom"
-import { useRegister } from "../api/useAuth"
+import { useRegister } from "../api/auth-store/useAuth"
 import { useState, type FormEvent } from "react"
 
 export default function Register() {

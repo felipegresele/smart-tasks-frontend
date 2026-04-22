@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react"
-import { useLogin } from "../api/useAuth"
+import { useLogin } from "../api/auth-store/useAuth"
 import { Zap } from "lucide-react"
 import { Link } from "react-router-dom"
 
@@ -18,7 +18,7 @@ export default function Login() {
     : null
  
   return (
-    <div className="min-h-screen bg-[#080808] flex items-center justify-center p-4">
+    <div className="bg-[#080808] flex items-center justify-center p-4">
       <div className="w-full max-w-sm">
         {/* Logo */}
         <div className="flex items-center gap-2 mb-10 justify-center">
@@ -29,7 +29,7 @@ export default function Login() {
         </div>
  
         <div className="bg-[#0f0f0f] border border-[#1c1c1c] rounded-2xl p-8">
-          <h1 className="text-[#f2f2f2] text-2xl font-semibold mb-1">Bem-vindo de volta</h1>
+          <h1 className="text-white text-2xl font-semibold mb-1">Bem-vindo de volta</h1>
           <p className="text-[#666] text-sm mb-8">Entre na sua conta para continuar</p>
  
           {errMsg && (

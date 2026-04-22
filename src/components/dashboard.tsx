@@ -2,11 +2,11 @@ import { useState } from 'react'
 import { DragDropContext, type DropResult } from '@hello-pangea/dnd'
 import { Plus, Filter } from 'lucide-react'
 import type { Priority, Task, TaskStatus } from '../schema'
-import { useTasks, useUpdateTaskStatus } from '../api/useTasks'
 import Sidebar from './sidebar'
 import KanbanColumn from './task-modal/kanban-column'
 import AiInput from './task-modal/ai-input'
 import TaskModal from './task-modal/task-modal'
+import { useTasks, useUpdateTaskStatus } from '../api/tasks/useTasks'
 
 const COLUMNS: TaskStatus[] = ['TODO', 'DOING', 'DONE']
 

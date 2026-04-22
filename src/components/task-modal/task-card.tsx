@@ -1,8 +1,8 @@
 import { useState } from "react"
-import { useDeleteTask } from "../../api/useTasks"
 import type { Task } from "../../schema"
 import { MoreHorizontal, Pencil, Trash2 } from "lucide-react"
 import { Draggable } from "@hello-pangea/dnd"
+import { useDeleteTask } from "../../api/tasks/useTasks"
 
 interface Props {
   task: Task
